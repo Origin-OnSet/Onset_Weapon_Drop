@@ -44,6 +44,8 @@ end)
 
 AddEvent("OnObjectStreamIn", function(object)
 
+    if GetObjectPropertyValue(object, "takeable") == nil then return end 
+    
     local propComponent = GetObjectStaticMeshComponent(object)
     propComponent:SetMobility(EComponentMobility.Movable)
     propComponent:SetCollisionEnabled(ECollisionEnabled.QueryAndPhysics)
