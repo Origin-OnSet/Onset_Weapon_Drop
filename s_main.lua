@@ -4,15 +4,6 @@ AddCommand("drop", function(player)
     DROP(player)
 end)
 
-AddEvent("OnPackageStart", function()
-    local x = -2616
-    for i = 2, 20 do
-        CREATE(x, -6048, 2100, i, 900)
-        x = x + 200
-    end
-end)
-
-
 function CREATE(x, y, z, Weapon_id, Weapon_ammo)
 
     if Weapon_id == nil or Weapon_id <= 1 then return false end
