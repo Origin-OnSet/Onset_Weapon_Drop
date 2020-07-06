@@ -1,0 +1,10 @@
+{
+  "author": "Fry",
+  "version": "1.0",
+  "client_scripts": [
+    "c_main.lua"
+  ],
+  "server_scripts": [
+    "s_main.lua"
+  ]
+}
